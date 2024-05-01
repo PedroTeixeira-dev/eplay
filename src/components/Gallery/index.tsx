@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import Section from '../Section'
 
 import { Item, Items, Action, Modal, ModalContent } from './styles'
@@ -8,12 +10,7 @@ import fotoSpider from '../../assets/images/banner-homem-aranha.png'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 import close from '../../assets/images/fechar.png'
-import { useState } from 'react'
-
-interface GalleryItem {
-  type: 'image' | 'video'
-  url: string
-}
+import { GalleryItem } from '../../pages/Home'
 
 const mock: GalleryItem[] = [
   {
